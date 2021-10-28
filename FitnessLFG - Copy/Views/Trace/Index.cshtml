@@ -1,0 +1,66 @@
+﻿@model IEnumerable<FitnessLFG.Models.ContactTrace>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VaccineCenter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SickContact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Symptoms)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VaccineCenter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SickContact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symptoms)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
