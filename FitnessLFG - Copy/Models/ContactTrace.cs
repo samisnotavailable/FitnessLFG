@@ -43,7 +43,7 @@ namespace FitnessLFG.Models
 
     public enum AmountofDoses
     {
-        None = 1,
+        Zero = 1,
         One = 2,
         Two = 3
     }
