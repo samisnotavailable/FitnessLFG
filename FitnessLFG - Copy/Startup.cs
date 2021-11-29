@@ -54,6 +54,7 @@ namespace FitnessLFG
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
