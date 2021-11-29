@@ -18,5 +18,6 @@ namespace FitnessLFG.Data
 
         public DbSet<Crud> Cruds { get; set; }
         public DbSet<ContactTrace> Traces { get; set; }
+        public DbSet<FitnessLFG.Models.ContactUs> ContactUs { get; set; }
     }
 }

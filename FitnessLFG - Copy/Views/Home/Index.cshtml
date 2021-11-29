@@ -3,26 +3,77 @@
 }
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
+    p {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 10px;
     }
 
-    .imgbox {
-        display: grid;
-        height: 100%;
+    h1 {
+        text-align: center;
+    }
+
+    button {
+        margin: 10px;
+        width: 50%;
+    }
+
+    .column {
+        margin: auto;
+        float: left;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     .center-fit {
-        max-width: 100%;
+        width: 80%;
         max-height: 100vh;
         margin: auto;
     }
+
 </style>
 
 <div class="text-center">
-
-    <h1 class="display-4">START YOUR FITNESS JOURNEY NOW</h1>
+    <h1>START YOUR FITNESS JOURNEY NOW</h1>
     <p>Get motivated like never before.</p>
     <img class="center-fit" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/make-time-for-it-royalty-free-image-840886802-1538426941.jpg" alt="" width="2400" height="1600" />
+
+    <br />
+    <p>
+        Designed to combat lack of motivation, this app is a medium for people to meet each other and exercise together,
+        all while following the current COVID-19 lockdown guidelines.
+    </p>
+
+ <h2>FitnessLFG Features:</h2>
+
+ <div class="row">
+
+     <div class="column">
+         <div class="card">
+             <img class="activity" src="https://www.mondaycampaigns.org/wp-content/uploads/2020/09/move-it-monday-feature-biking.png" />
+             <div class="container">
+                 <a asp-controller="Crud" asp-action="Index">
+                     <button class=" btn btn-primary">Our Activities</button>
+                 </a>
+             </div>
+         </div>
+     </div>
+
+     <div class="column">
+         <div class="card">
+             <img class="activity" src="https://www.gannett-cdn.com/presto/2021/03/08/USAT/a5feed4f-fab5-46f6-94a4-fb2a09857689-vaccine-now_what-topper.jpg?crop=1673,941,x442,y0" />
+             <div class="container">
+                 <a asp-controller="Trace" asp-action="Create">
+                     <button class=" btn btn-primary">Contact Tracing</button>
+                 </a>
+             </div>
+         </div>
+     </div>
+
+ </div>
+
 </div>

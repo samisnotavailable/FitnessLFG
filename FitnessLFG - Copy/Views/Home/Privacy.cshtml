@@ -2,26 +2,79 @@
     ViewData["Title"] = "About Us";
 }
 <style>
-    * {
-        margin: 0;
-        padding: 0;
+    h5 {
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: 5px;
     }
 
-    .imgbox {
-        display: grid;
-        height: 100%;
-    }
-
-    .center-fit {
-        max-width: 100%;
-        max-height: 100vh;
+    .column {
         margin: auto;
+        float: left;
+        width: 30%;
+        margin-bottom: 10px;
     }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
 </style>
 
-<h1 style="text-align: center;">We are FitnessLFG</h1>
-<p style="text-align: center;">Designed to combat lack of motivation, t<span class="JsGRdQ">his app is a medium for these people to meet each other, form groups, and run on schedules, all while following a curated set of rules to avoid the spread or breakthrough of the virus.</span>&nbsp;</p>
-<img class="center-fit" src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_36/2144546/170905-working-out-group-ac-512p.jpg" alt="" width="2400" height="1600" />
-<p style="text-align: center;">&nbsp;</p>
-<h2 style="text-align: center;">Creators:</h2>
-<p style="text-align: center;">Fronda, John May &emsp; Noel, Juan Samuel &emsp; Vicente, Eucarlo Miguel</p>
+<h1 style="text-align: center;">This is FitnessLFG</h1>
+<h5 style="text-align: center;"> 
+    The idea and website of FitnessLFG is also a Finals group project for the course subject ENTPROG, 
+    under the BS-IS program of the College of Saint Benilde.
+</h5>
+<br />
+<br />
+
+<h2 style="text-align: center;">The Creators:</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/104474122_3447728175239886_2168096649460065619_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGUZM9B5NSrScNsZ6TyLGw_MtMd9Nl1TKMy0x302XVMo4aM67Nxr2OyOIAkdDCHoNYwv-O6jCwRHIgw8GbRGBXO&_nc_ohc=Bvaa7dqusNoAX_QpOhc&_nc_ht=scontent.fmnl4-2.fna&oh=58e32270b4500236b350c31dbd7c0059&oe=61CAB61F"
+                 alt="johnFronda">
+            <div class="container">
+                <h2>John Fronda</h2>
+                <p>Group Member</p>
+                <a href="https://www.facebook.com/john.fronda.512">
+                    <button class=" btn btn-primary">Contact John here</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/187133289_4105721962782930_2698330979268012490_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeGfGBxzjpijnspVNUEL6PTqLMe7AlbvydMsx7sCVu_J05DZzZUPZGPrKhJ3ISbqze59sfELgu99gn1PVQHJ1VID&_nc_ohc=GRKYLs4BjjsAX9v-VPp&_nc_ht=scontent.fmnl4-1.fna&oh=d4aff76356f845b408a2507ef8115326&oe=61CB1CDF"
+                 alt="samNoel">
+            <div class="container">
+                <h2>Samuel Noel</h2>
+                <p>Group Member</p>
+                <a href="https://www.facebook.com/samuel.noel.79">
+                    <button class="btn btn-primary">Contact Samuel here</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.6435-9/145091827_3816492691744051_361635430076088937_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFp5RxSScdlajPz_8hCdZeL_qXaFPbx_4_-pdoU9vH_jy7Nco4OaDWbOfhsMOqDx83oQyjLQESyL8NSKPgwYq92&_nc_ohc=ZMuLdoT8HAcAX9tt-Je&tn=M3g9263Zw1f4Iobh&_nc_ht=scontent.fmnl4-2.fna&oh=e561244a86bd92cfedd0ec26b6eca471&oe=61C9764D"
+                 alt="eucarloVicente">
+            <div class="container">
+                <h2>Eucarlo Vicente</h2>
+                <p>Group Member</p>
+                <a href="https://www.facebook.com/eucarlombv">
+                    <button class="btn btn-primary">Contact Eucarlo here</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

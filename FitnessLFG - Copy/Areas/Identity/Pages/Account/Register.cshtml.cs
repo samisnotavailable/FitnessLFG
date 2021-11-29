@@ -85,7 +85,7 @@ namespace FitnessLFG.Areas.Identity.Pages.Account
             {
                 var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email,
                     FirstName = Input.FN, LastName = Input.LN,
-                    EmailConfirmed = true};
+                    EmailConfirmed = true };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
